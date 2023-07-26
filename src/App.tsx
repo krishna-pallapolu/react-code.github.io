@@ -39,11 +39,11 @@ const App: React.FC = () => {
 	};
 
 	return (
-		<div className="app">
+		<div className="app container pb-5 mb-5">
 			{slides.length > 0 && (
 				<>
-					<Slide title={slides[currentSlide - 1].title} imageUrl={slides[currentSlide - 1].url} slideNumber={currentSlide} />
 					<SlideControls currentSlide={currentSlide} totalSlides={slides.length} onPrevious={handlePrevious} onNext={handleNext} onRestart={handleRestart} />
+					<Slide title={slides[currentSlide - 1].title} imageUrl={slides[currentSlide - 1].url} slideNumber={currentSlide} />
 				</>
 			)}
 		</div>

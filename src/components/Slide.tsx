@@ -9,7 +9,7 @@ interface SlideProps {
 
 const Slide: React.FC<SlideProps> = ({ title, imageUrl, slideNumber }) => {
 	return (
-		<div className="slide">
+		<div className="slide pb-5">
 			<h2>{title}</h2>
 			<img src={imageUrl} alt={title} />
 			<p>Slide {slideNumber}</p>

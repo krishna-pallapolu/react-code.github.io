@@ -11,3 +11,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* styles.css */
+.app {
+	text-align: center;
+}
+  
+.slide {
+	margin: 30px auto;
+}
+  
+.slide img {
+	width: 100%;
+	height: auto;
+	max-height: 450px;
+	object-fit: cover;
+}
+  
+.slide-controls {
+	margin-top: 20px;
+}
+  
+button {
+	margin: 5px;
+}
+.scontrols button {
+	outline: none;
+	border: none;
+	padding: 5px 12px;
+	margin: 10px;
+	border-radius: 4px;
+}  

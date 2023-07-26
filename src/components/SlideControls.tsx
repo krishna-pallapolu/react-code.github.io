@@ -14,7 +14,7 @@ const SlideControls: React.FC<SlideControlsProps> = ({ currentSlide, totalSlides
 	const isLastSlide = currentSlide === totalSlides;
 
 	return (
-		<div className="slide-controls">
+		<div className="slide-controls d-flex align-items-center justify-content-center scontrols">
 			<button onClick={onPrevious} disabled={isFirstSlide}>
 				Previous
 			</button>
