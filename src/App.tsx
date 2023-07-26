@@ -25,6 +25,15 @@ const App: React.FC = () => {
 				console.error("Error fetching slides:", error);
 			});
 	}, []);
+    useEffect(() => {
+		// Auto-rotate the slides every 3 seconds
+		const interval = setInterval(() => {
+			setCurrentSlide((prevSlide) => (prevSlide % slides.length) + 1);
+		}, 3000);
+
+		// Clear the interval when the component unmounts
+		return () => clearInterval(interval);
+	}, [slides]);
 
 	const handlePrevious = () => {
 		setCurrentSlide((prevSlide) => prevSlide - 1);
